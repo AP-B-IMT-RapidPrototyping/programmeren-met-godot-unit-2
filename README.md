@@ -1,38 +1,14 @@
-<p align="center"><img src="icon.png"/></p>
+# Programmeren met Godot - Unit 2: Basis Gameplay
 
-# Starter Kit FPS
+Dit startproject wordt gebruikt om basis gameplay in Godot aan te leren, met behulp van C# scripts en de Godot Game Engine.
 
-This package includes a basic template for a first person shooter in Godot 4.3 (stable). Includes features like;
-
-- Character controller
-- Weapons, switching weapons
-- Enemies
-- Sprites and 3D Models _(CC0 licensed)_
-
-### Screenshot
 
 <p align="center"><img src="screenshots/screenshot.png"/></p>
 
-### Controls
-
-| Key | Command |
-| --- | --- |
-| <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> | Movement |
-| <kbd>Spacebar</kbd> | Jump |
-| <kbd>Left mouse button</kbd> | Shoot |
-| <kbd>E</kbd> | Switch weapon |
-
-### Instructions
-
-1. How to add more weapons?
-
-Duplicate one of the existing resources in the 'weapons' folder, adjust the properties in the inspector. Select the 'Player' node in the scene and add your new resources to the 'Weapons' array.
-
-2. How to adjust properties like cooldown, damage and spread?
-
-Select the resource of the weapon you'd like to change in the 'weapons' folder, adjust the properties in the inspector.
 
 ### License
+
+Dit project is gebaseerd op de FPS Starter Kit van kenney.nl. Het project is aangepast aan de specifieke leernoden van de cursus Rapid Prototyping.
 
 MIT License
 
