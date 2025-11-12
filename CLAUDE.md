@@ -32,27 +32,41 @@ This is a Godot 4.5 FPS (First Person Shooter) tutorial starter project. It prov
 │   ├── main.tscn                 # Primary game level scene with environment
 │   └── main-environment.tres     # Environment/lighting settings
 ├── models/            # 3D models (.glb files) - ready to import
-│   ├── blaster.glb               # Weapon model
-│   ├── character-enemy.glb       # Enemy character model
-│   ├── character-player.glb      # Player character model
+│   ├── blaster.glb               # Standard blaster weapon model
+│   ├── blaster-repeater.glb      # Repeater blaster weapon model
 │   ├── cloud.glb                 # Cloud decoration model
-│   ├── impact.glb                # Impact effect model
-│   ├── platform*.glb             # Various platform models
-│   └── wall*.glb                 # Various wall models
-├── sprites/           # 2D sprites and animations (.tres)
-│   ├── crosshair*.tres           # Crosshair UI sprites
-│   ├── impact*.tres              # Impact effect sprite animations
-│   └── muzzle*.tres              # Muzzle flash sprite animations
+│   ├── enemy-flying.glb          # Flying enemy model
+│   ├── grass.glb                 # Grass decoration model
+│   ├── grass-small.glb           # Small grass decoration model
+│   ├── platform.glb              # Standard platform model
+│   ├── platform-large-grass.glb  # Large grass platform model
+│   ├── target-detail.glb         # Detailed target model
+│   ├── target-fragment-large.glb # Large target fragment model
+│   ├── target-fragment-small.glb # Small target fragment model
+│   ├── wall-high.glb             # High wall model
+│   └── wall-low.glb              # Low wall model
+├── sprites/           # 2D sprites and textures
+│   ├── burst_animation.tres      # Burst/muzzle flash animation
+│   ├── blob_shadow.png           # Shadow sprite texture
+│   ├── burst.png                 # Burst effect texture
+│   ├── crosshair.png             # Standard crosshair texture
+│   ├── crosshair-repeater.png    # Repeater crosshair texture
+│   ├── hit.png                   # Hit effect texture
+│   └── skybox.png                # Skybox texture
 ├── sounds/            # Audio files (.ogg)
-│   ├── blaster_*.ogg             # Weapon sound effects
-│   ├── enemy_explode.ogg         # Enemy destruction sound
-│   ├── enemy_shoot.ogg           # Enemy attack sound
-│   ├── footstep_*.ogg            # Player footstep sounds
-│   ├── impact_*.ogg              # Impact/hit sounds
-│   ├── jump_*.ogg                # Jump sounds
-│   └── select.ogg                # UI selection sound
+│   ├── blaster.ogg               # Standard blaster sound
+│   ├── blaster_repeater.ogg      # Repeater blaster sound
+│   ├── enemy_attack.ogg          # Enemy attack sound
+│   ├── enemy_destroy.ogg         # Enemy destruction sound
+│   ├── enemy_hurt.ogg            # Enemy hurt sound
+│   ├── jump_a.ogg                # Jump sound variant A
+│   ├── jump_b.ogg                # Jump sound variant B
+│   ├── jump_c.ogg                # Jump sound variant C
+│   ├── land.ogg                  # Landing sound
+│   ├── walking.ogg               # Walking/footstep sound
+│   └── weapon_change.ogg         # Weapon switching sound
 ├── fonts/             # Font files
-│   └── kenney-bold.ttf           # Kenney bold font
+│   └── lilita_one_regular.ttf    # Lilita One font
 ├── vector/            # Vector graphics
 │   └── icon.svg                  # Project icon source
 ├── screenshots/       # Project screenshots
@@ -65,23 +79,24 @@ This is a Godot 4.5 FPS (First Person Shooter) tutorial starter project. It prov
 
 ### 3D Models (GLB Format)
 All models are ready to be imported as scenes:
-- **Characters**: `character-player.glb`, `character-enemy.glb`
-- **Weapons**: `blaster.glb`
-- **Effects**: `impact.glb`, `cloud.glb`
-- **Environment**: Multiple platform and wall variants
+- **Weapons**: `blaster.glb`, `blaster-repeater.glb`
+- **Enemies**: `enemy-flying.glb`
+- **Targets**: `target-detail.glb`, `target-fragment-large.glb`, `target-fragment-small.glb`
+- **Environment**: `platform.glb`, `platform-large-grass.glb`, `wall-high.glb`, `wall-low.glb`
+- **Decoration**: `cloud.glb`, `grass.glb`, `grass-small.glb`
 
-### Sprite Animations (Tres Resources)
-Pre-configured sprite animations for:
-- **Crosshairs**: 4 variants (`crosshair-dot.tres`, `crosshair-outline-small.tres`, etc.)
-- **Impact Effects**: 2 variants with animations
-- **Muzzle Flash**: 2 variants with animations
+### Sprites and Textures
+Available sprite assets:
+- **Animations**: `burst_animation.tres` - Muzzle flash/burst animation
+- **Crosshairs**: `crosshair.png`, `crosshair-repeater.png` - Weapon crosshair textures
+- **Effects**: `burst.png`, `hit.png` - Visual effect textures
+- **Misc**: `blob_shadow.png`, `skybox.png` - Shadow and skybox textures
 
 ### Audio Assets (OGG Format)
 Complete set of game sounds:
-- **Weapon**: Multiple blaster sound variants
-- **Movement**: 6 footstep sound variations, 3 jump sound variations
-- **Combat**: Impact sounds, enemy sounds
-- **UI**: Selection sound
+- **Weapons**: `blaster.ogg`, `blaster_repeater.ogg`, `weapon_change.ogg`
+- **Movement**: `walking.ogg`, `jump_a.ogg`, `jump_b.ogg`, `jump_c.ogg`, `land.ogg`
+- **Enemy**: `enemy_attack.ogg`, `enemy_destroy.ogg`, `enemy_hurt.ogg`
 
 ### Environment
 The main scene (`scenes/main.tscn`) includes:
