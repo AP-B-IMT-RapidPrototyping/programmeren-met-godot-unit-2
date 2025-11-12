@@ -1,12 +1,10 @@
 using Godot;
 using System;
 
-<<<<<<< HEAD
-public partial class Blaster : Node3D
-=======
-public partial class Blaster : MeshInstance3D
->>>>>>> d606272ef4aa41be714afa4192ea72a6c91ed82d
+public partial class Enemy : Node3D
 {
+	[Signal]
+	public delegate void ShootEventHandler();
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -16,9 +14,4 @@ public partial class Blaster : MeshInstance3D
 	public override void _Process(double delta)
 	{
 	}
-<<<<<<< HEAD
-=======
-
-	public void OnShoot() {}
->>>>>>> d606272ef4aa41be714afa4192ea72a6c91ed82d
 }

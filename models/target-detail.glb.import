@@ -3,7 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://co6p255p58xb5"
+uid="uid://bcxulxsxtt2hl"
 path="res://.godot/imported/target-detail.glb-b83ca1ee0d076107b288558bf69bf65f.scn"
 
 [deps]
@@ -40,6 +40,7 @@ materials/extract_path=""
 _subresources={
 "nodes": {
 "PATH:target-detail": {
+"generate/physics": true,
 "physics/body_type": 1
 }
 }
