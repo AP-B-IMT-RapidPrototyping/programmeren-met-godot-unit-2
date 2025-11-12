@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://c3b2nsphg10cy"
-path="res://.godot/imported/target-fragment-large.glb-25f2055c1d3064499d6d7261fde501ba.scn"
+uid="uid://dmxmh2o8vqq6x"
+path="res://.godot/imported/bullet-foam-tip.glb-38209c4f73be70d1810c89938ae2ae0d.scn"
 
 [deps]
 
-source_file="res://models/target-fragment-large.glb"
-dest_files=["res://.godot/imported/target-fragment-large.glb-25f2055c1d3064499d6d7261fde501ba.scn"]
+source_file="res://models/bullet-foam-tip.glb"
+dest_files=["res://.godot/imported/bullet-foam-tip.glb-38209c4f73be70d1810c89938ae2ae0d.scn"]
 
 [params]
 
@@ -37,6 +37,13 @@ import_script/path=""
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
-_subresources={}
+_subresources={
+"nodes": {
+"PATH:bullet-foam-tip": {
+"physics/body_type": 1,
+"physics/shape_type": 4
+}
+}
+}
 gltf/naming_version=2
 gltf/embedded_image_handling=1
