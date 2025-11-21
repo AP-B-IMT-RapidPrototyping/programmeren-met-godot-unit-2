@@ -40,7 +40,6 @@ materials/extract_path=""
 _subresources={
 "nodes": {
 "PATH:target-detail": {
-"generate/physics": true,
 "physics/body_type": 1
 }
 }
