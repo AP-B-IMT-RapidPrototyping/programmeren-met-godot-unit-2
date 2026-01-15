@@ -14,7 +14,6 @@ config/name="Programmeren met Godot - Unit 2"
 config/tags=PackedStringArray("programmeren", "starterkit")
 run/main_scene="res://scenes/main.tscn"
 config/features=PackedStringArray("4.5", "C#", "Forward Plus")
-config/icon="res://icon.png"
 
 [display]
 
